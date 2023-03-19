@@ -4,9 +4,11 @@
 
   <h4>Title</h4>
   <h4>Body</h4>
-  <span>
-    <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
-  </span>
+  <%= book.title %>
+  <%= book.body %>
+  <%= link_to "Show", book_path(book.id) %>
+  <%= link_to "Edit", edit_book_path(book.id) %>
+  <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
   
 <% end %>
 
